@@ -33,3 +33,6 @@ https://medium.com/@kirudang/deep-learning-computer-vision-using-transfer-learni
 
 The Essential Guide to Data Augmentation in Deep Learning  
 https://medium.com/@saiwadotai/the-essential-guide-to-data-augmentation-in-deep-learning-f66e0907cdc8 
+
+Layer Freezing info:
+https://www.restack.io/p/transfer-learning-answer-layer-freezing-cat-ai

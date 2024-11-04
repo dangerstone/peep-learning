@@ -18,3 +18,14 @@ Related work is listed below, where we have found research using different versi
 * Anusha, P., and ManiSai, K., "Bird Species Classification Using Deep Learning," 2022 International Conference on Intelligent Controller and Computing for Smart Power (ICICCSP), Hyderabad, India, 2022, pp. 1-5, doi: 10.1109/ICICCSP53532.2022.9862344. 
 * Wang, Y.; Zhou, J.; Zhang, C.; Luo, Z.; Han, X.; Ji, Y.; Guan, J. “Bird Object Detection: Dataset Construction”, Model Performance Evaluation, and Model Lightweighting. Animals 2023, 13, 2924, doi: 10.3390/ani13182924.
 * Niemi, J.; Tanttu, J.T. “Deep Learning Case Study for Automatic Bird Identification”. Appl. Sci. 2018, 8, 2089, doi: 10.3390/app8112089. 
+
+
+
+
+TODO next step
+
+hvis vi bare kører den så virker den fint på validation
+så
+  - kør på test set og se om den virker
+  - se om den virker på feeder data
+  - tilføj noget augmentation 

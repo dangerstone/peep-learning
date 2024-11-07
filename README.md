@@ -29,3 +29,34 @@ så
   - kør på test set og se om den virker
   - se om den virker på feeder data
   - tilføj noget augmentation 
+  - skal man normalisere feeder og test data?
+
+
+
+  what did we do 07/11/24
+  - trained model from scratch on full traning and validation set, first freezing all but the last layer, then fine tuning by unfreezing all layers
+  - first training with 10 epochs took 18min on device 
+    - It got around
+    - Train Loss: 0.4841 Acc: 0.9150
+    - Val Loss: 0.3323 Acc: 0.9904
+  - Second training with 6 epochs took around 30min on device
+    - It got around
+    - Train Loss: 0.0237 Acc: 0.9964
+    - Val Loss: 0.0522 Acc: 0.9808
+    - At the last epoch, the validation accuracy was slightly worse than in the fifth epoch
+  - Kørte det på test dataloader
+    - Accuracy 94.28571428571428
+    - den havde sværrest ved greatTit som den troede var coalTit
+  - kørte den på feederData, makeAll tog 25 min i sig selv 
+      Accuracy 46.87313482326414
+    [[ 560   26  358  102  409  267  356]
+    [ 300  835  580  708  152  578  399]
+    [ 126   40 1134  101  126   16  303]
+    [   7    5  263 1622   35   46   22]
+    [ 260   17  464  116  505  175  496]
+    [ 172  100   18   70    0  849  219]
+    [  20    9  333   60   38  119 1563]]
+  - e
+  - so next try and add augmentation i hvert fald, 
+    - tjek evt papers igennem igen og se om der er noget gode faglige ideer vi kan bruge, så vi også kan argumentere for hvorfor vi gør det og hvad vi gør
+    -  

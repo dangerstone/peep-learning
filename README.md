@@ -60,3 +60,6 @@ så
   - so next try and add augmentation i hvert fald, 
     - tjek evt papers igennem igen og se om der er noget gode faglige ideer vi kan bruge, så vi også kan argumentere for hvorfor vi gør det og hvad vi gør
     -  
+
+  Stinnaas spørgsmål fra 8/10
+  - Forvirret over brug af transformers, fordi vi har simple_transfroms som er tom, og så lavede vi preprocess og preprocess_with_augmentation, som har den preprocessing som ResNet forventer (og som simple_transformer ikke har). Men der er lavet dataloaders der hedder X_set og X_aug, hvor de hhv. har simple_transform og preprocess. Men vi X_aug burde vel have den transformer med augmentations i.

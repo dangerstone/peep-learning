@@ -1,5 +1,27 @@
 
-# Official describtion
+# Notes for our self
+
+## TODO list
+- ~~make document with the template~~
+- insert links to our datasets
+- we should look at the papers again for inspiration and documentation for how to improve our model maybe.  
+- we should find a way to load the data in the code and not by assuming it is already downloaded maybe  
+- hvilke modeller skal vi have med i vores rapport? Conf Matrix. Udvikling i accuracy?
+- ...
+
+### Report TODO
+- write intro
+- write related work
+- write methods
+    - figure out network architecture
+    - describe datasets
+    - experiments ect
+- write results
+- results compared to basepaper
+- discussion
+- ~~tjek references work~~
+
+# Official describtion of Project 
 ## Requirements  
    - Your project should involve pixels of visual data in some form.  
    - You must train a neural network model, evaluate it and perform experiments to improve its performance.  
@@ -28,5 +50,3 @@ Final report submission no later than Friday 6th December
 You must hand in your project source code to document that you did the work yourselves. A link to Google Colab or GitHub is fine, but you can also upload the code as a file. 
     If possible, please provide code to download your dataset. Please do not upload your data!
 
-
-# Notes for our self

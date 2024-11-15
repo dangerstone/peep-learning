@@ -106,6 +106,7 @@ I et af papers'ne https://www.mdpi.com/2076-2615/13/18/2924 kører de ResNet50 m
 I https://www.mdpi.com/2076-3417/8/11/2089 kører de en SVM med "_A linear classification model is applied. Stochastic gradient descent with 10 as the mini-batch size, and the Hinge loss function with regularization term 1/n, where n is a number of training examples_"  
 De to andre papers har ved øjekast ikke skrevet hvad deres batch metode er
 
+15/11  
 Efter Anna kørte med 8, 24 tog det cirka to timer på train og test og vi fik en Accuracy på $94.28571428571428$ og 
 $$
 \begin{bmatrix}
@@ -119,3 +120,30 @@ $$
 \end{bmatrix}
 $$
   hvilket er den præcis samme accuracy som før hvilket jeg ikke ved om er sus eller handler om størelsen på vores testset. 
+
+    
+  Derudover prøvede vi at sætte weight decay på med 0.00001 og sætte learning rate til 0.02 efter de parametre de brugte i paper'et.  
+  Vi tror nok det gav en accuracy på 83.80952380952381 og en conf matrix på
+$\begin{bmatrix}
+13  &0 & 1  &0  & 1  &0 & 0\\
+ 0 &12&  1  &1  & 1  &0 & 0\\
+  0  &2 &10  &0  & 2  &0 & 1\\
+  0  &0 & 0 &13  & 1  &1 & 0\\
+  0  &0 & 2  &0 & 12  &0 & 1\\
+  0  &0 & 1  &0  & 0 &14 & 0\\
+  0  &0 & 0  &0  & 0  &1 &14\\
+\end{bmatrix}$  
+Vi prøvede også at compare precision recall explicit fordi det gjorde de i paper'et 
+$$ \begin{matrix}
+            &  precision  &  recall   &\text{f1-score}  &  &support \\
+     \text{blueTit}  &     1.00     & 0.87     &  0.93        &15 \\
+   \text{chaffinch}  &     0.86     & 0.80     &  0.83        &15 \\
+     \text{coalTit}  &     0.67     & 0.67     &  0.67        &15 \\
+   \text{goldfinch}  &     0.93     & 0.87     &  0.90        &15 \\
+    \text{greatTit}  &     0.71     & 0.80     &  0.75        &15 \\
+       \text{robin}  &     0.88     & 0.93     &  0.90        &15 \\
+    \text{starling}  &     0.88     & 0.93     &  0.90        &15 \\
+    \text{accuracy}  &              &          &  0.84       &105 \\
+   \text{macro avg}  &     0.84     & 0.84     &  0.84       &105 \\
+\text{weighted avg}  &     0.84     & 0.84     &  0.84       &105 \\
+\end{matrix}$$

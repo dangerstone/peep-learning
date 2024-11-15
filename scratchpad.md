@@ -105,4 +105,17 @@ Vi kørte med 8 epochs 4 batch-size, vi tror det skal sættes op.
 I et af papers'ne https://www.mdpi.com/2076-2615/13/18/2924 kører de ResNet50 med batch size 8 og 24 epochs, we should try this <- Anna will do    
 I https://www.mdpi.com/2076-3417/8/11/2089 kører de en SVM med "_A linear classification model is applied. Stochastic gradient descent with 10 as the mini-batch size, and the Hinge loss function with regularization term 1/n, where n is a number of training examples_"  
 De to andre papers har ved øjekast ikke skrevet hvad deres batch metode er
-  
+
+Efter Anna kørte med 8, 24 tog det cirka to timer på train og test og vi fik en Accuracy på $94.28571428571428$ og 
+$$
+\begin{bmatrix}
+14 & 0&  1&  0&  0&  0&  0& \\
+  0 &15&  0&  0&  0&  0&  0& \\
+  0 & 0& 14&  0&  1&  0&  0& \\
+  0 & 0&  0& 15&  0&  0&  0& \\
+  0 & 0&  3&  0& 12&  0&  0& \\
+  0 & 1&  0&  0&  0& 14&  0& \\
+  0 & 0&  0&  0&  0&  0& 15& \\
+\end{bmatrix}
+$$
+  hvilket er den præcis samme accuracy som før hvilket jeg ikke ved om er sus eller handler om størelsen på vores testset. 

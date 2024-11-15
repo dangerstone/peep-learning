@@ -66,15 +66,17 @@ så
     - Accuracy 94.28571428571428
     - den havde sværrest ved greatTit som den troede var coalTit
   - kørte den på feederData, makeAll tog 25 min i sig selv 
-      Accuracy 46.87313482326414
-    [[ 560   26  358  102  409  267  356]
-    [ 300  835  580  708  152  578  399]
-    [ 126   40 1134  101  126   16  303]
-    [   7    5  263 1622   35   46   22]
-    [ 260   17  464  116  505  175  496]
-    [ 172  100   18   70    0  849  219]
-    [  20    9  333   60   38  119 1563]]
-  - e
+      Accuracy $46.87313482326414$
+    $$
+      \begin{bmatrix}
+     560 &  26&  358&  102&  409&  267&  356 \\
+     300&  835&  580&  708&  152&  578&  399 \\
+     126 &  40& 1134&  101&  126&   16&  303 \\
+       7  &  5&  263& 1622&   35&   46&   22 \\
+     260 &  17&  464&  116&  505&  175&  496 \\
+     172&  100&   18&   70&    0&  849&  219 \\
+      20  &  9&  333&   60&   38&  119& 1563 
+    \end{bmatrix}$$
   - so next try and add augmentation i hvert fald, 
     - tjek evt papers igennem igen og se om der er noget gode faglige ideer vi kan bruge, så vi også kan argumentere for hvorfor vi gør det og hvad vi gør
     -  
@@ -94,3 +96,13 @@ så
   har ikke testet på feederdata endnu fordi har ik lige tid til at køre lortet inden jeg skal hjem lmao
   men den klarer sig fint på test data med augmentation på, slutter med en 92% acc (igen, tror jeg lige skal køre det noget længere og se hvad der sker - også i tvivl om om vi skal concat det normale og det augmented datasæt fordi pointen er vel at augmentation gør datasættet STØRRE, right?)
 
+
+
+14/11  
+vi spurgte ind til augmentation, det er kun på train data. De skal ikke concats pga den måde dataloader virker på.    
+Normalization er mere up in the air om man skal sætte på. However vi skal måske lige dobbelt tjekke de værdier vi har sat ind. Jeg mener det er fra Resnet, men det burde måske være baseret på vores dataset.  
+Vi kørte med 8 epochs 4 batch-size, vi tror det skal sættes op.  
+I et af papers'ne https://www.mdpi.com/2076-2615/13/18/2924 kører de ResNet50 med batch size 8 og 24 epochs, we should try this <- Anna will do    
+I https://www.mdpi.com/2076-3417/8/11/2089 kører de en SVM med "_A linear classification model is applied. Stochastic gradient descent with 10 as the mini-batch size, and the Hinge loss function with regularization term 1/n, where n is a number of training examples_"  
+De to andre papers har ved øjekast ikke skrevet hvad deres batch metode er
+  

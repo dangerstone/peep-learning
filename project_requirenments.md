@@ -7,6 +7,11 @@
 - we should look at the papers again for inspiration and documentation for how to improve our model maybe.  
 - we should find a way to load the data in the code and not by assuming it is already downloaded maybe  
 - hvilke modeller skal vi have med i vores rapport? Conf Matrix. Udvikling i accuracy?
+- Make model with learning rate scheduler <-- ak does
+- make model_aug3 and runs before thursday <-- anna
+- unfreeze layer 3 and layer 4 only <-- wil do
+- start på noget rapport noget <-- stinna
+- lav noget setup til at compare modeller på feeder data <- stinna evt. 
 - ...
 
 ### Report TODO

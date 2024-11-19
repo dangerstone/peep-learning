@@ -147,3 +147,26 @@ $$ \begin{matrix}
    \text{macro avg}  &     0.84     & 0.84     &  0.84       &105 \\
 \text{weighted avg}  &     0.84     & 0.84     &  0.84       &105 \\
 \end{matrix}$$
+
+
+19/11 AKs log
+- Har lavet en model_learning_rate og en exp_learning fil
+- model_learning har en linear learning rate scheduler og en cycle_learning_rate scheduler mens exp_learning har den exp_learning_scheduler vi brugte til tø
+- i begge filer er der en train_model_scheduled som er den samme
+- jeg er i tvivl om hvilke parametre, har prøvet med nogle standard
+- Med linear rate scheduler tog det 44+138 minutter at træne og accuracy kom op på 78%
+$\begin{bmatrix}
+13 &  0 &  1 &  0&  0 &  0&  1\\
+ 1 & 10 &  2 &  0&  0 &  0&  2\\
+ 2 &  0 & 13 &  0&  0 &  0&  0\\
+ 1 &  0 &  0 & 14&  0 &  0&  0\\
+ 1 &  0 &  5 &  0&  9 &  0&  0\\
+ 0 &  1 &  0 &  0&  0 & 13&  1\\
+ 2 &  0 &  3 &  0&  0 &  0& 10\\
+\end{bmatrix}$
+- cycle learning rate tog 45 +129 minutter at træne og den kom op på 98% accuracy
+- cycle_scheduler = lr_scheduler.CyclicLR(optimizer=optimizer,base_lr=0.001, max_lr=0.1)
+- er lidt i tvivl om hvor meget den reelt har cyclet lr 
+- tror måske jeg skulle have sat step size til noget
+- har ikke kørt exp learning rate endnu
+- venter lige med at pushe mine filer

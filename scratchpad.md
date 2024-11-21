@@ -169,4 +169,19 @@ $\begin{bmatrix}
 - er lidt i tvivl om hvor meget den reelt har cyclet lr 
 - tror måske jeg skulle have sat step size til noget
 - har ikke kørt exp learning rate endnu
-- venter lige med at pushe mine filer
+- venter lige med at pushe mine filer  
+20/11 
+- trained exp model den fik accuracy på 93.3% 
+- det tog 50 + 140 minutter
+$$\begin{bmatrix}
+ 5 &  0&  0&  0&  0&  0&  0\\
+ 0 & 15&  0&  0&  0&  0&  0\\
+ 0 &  0& 15&  0&  0&  0&  0\\
+ 0 &  1&  0& 14&  0&  0&  0\\
+ 0 &  0&  4&  0& 10&  0&  1\\
+ 0 &  1&  0&  0&  0& 14&  0\\
+ 0 &  0&  0&  0&  0&  0& 15\\
+ \end{bmatrix}
+ $$
+- prøvede at save og load dens state_dict, man skal huske at sætte den til model.eval() så tror jeg det virker
+- BURDE VI ALTID SÆTTE MODEL.EVAL() I MAKE ALL ?????????????

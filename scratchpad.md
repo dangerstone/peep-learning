@@ -185,3 +185,13 @@ $$\begin{bmatrix}
  $$
 - prøvede at save og load dens state_dict, man skal huske at sætte den til model.eval() så tror jeg det virker
 - BURDE VI ALTID SÆTTE MODEL.EVAL() I MAKE ALL ?????????????
+
+21/11
+- we need to make better argumnets for going from step to step
+- so start initial model again with more epochs so we can inspect the loss curves
+- EITHER
+- - Copy the train_model from setup over in our old model.ipynb file
+- - OR make a initial_model.ipynb and import setup.ipynb and run without any augmentations or anything besides normalization and toTensor
+- run model with 40 epochs or something
+- print loss curves with plot_accuracy function (or better make a plot_loss curves)
+- unfreeze and run again

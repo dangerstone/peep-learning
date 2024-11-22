@@ -38,7 +38,7 @@
    -   -  Explain your results  
    - You should demonstrate that you are familiar with all of the above.  
 
-Final report submission no later than Friday 6th December
+Final report submission no later than Sunday 8th December
 
 ## Report
 - Use this arXiv template for your report.    
@@ -49,7 +49,7 @@ Final report submission no later than Friday 6th December
 -   - Methods (What did you do and how? Describe network architecture, data set, experiments, etc.)  
 -   - Results (Objectively summarize your results and compare to your baseline model and/or the papers covered in your related work section)  
 -   - Discussion (How well did you do? What worked? What didn’t work?)  
--    Final report between 6-8 pages including pictures/figures. Stay within the limits, thanks!  
+-    Final report between 6-8 pages including pictures/figures. Stay within the limits, and avoid putting a ton of stuff into an appendix, because I won't read it. 
 
 ## Code
 You must hand in your project source code to document that you did the work yourselves. A link to Google Colab or GitHub is fine, but you can also upload the code as a file. 

@@ -195,3 +195,8 @@ $$\begin{bmatrix}
 - run model with 40 epochs or something
 - print loss curves with plot_accuracy function (or better make a plot_loss curves)
 - unfreeze and run again
+
+
+
+27/11
+* Vi vinder ikke noget ved at have batch size 32, fordi det er 2 min forskel og basically samme acc

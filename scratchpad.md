@@ -200,3 +200,10 @@ $$\begin{bmatrix}
 
 27/11
 * Vi vinder ikke noget ved at have batch size 32, fordi det er 2 min forskel og basically samme acc
+
+BASEMODEL: 60 epochs, 16 batch size, ADAM-optimiser
+
+TODO: 
+* Stinna: Træne+gemme basemodel (the real one) 
+* A^K:    Træne basemodel men med SGD-optimiser + lr scheduler
+* Anna:   Træne forskellige augs med basemodel

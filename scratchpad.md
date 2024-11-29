@@ -211,4 +211,34 @@ TODO:
 
 29/11
 
-* jeg tror ikke at finetuning er blevet kørt med aug data
+basemodel+aug1, finetuning aug1, epochs 40: 
+    acc ??,   feederacc ??
+basemodel+aug2, finetuning aug2, epochs 40: 
+    acc ??,   feederacc ?? 
+basemodel, finetuning aug1, epochs 40: 
+    acc ??,   feederacc ?? 
+basemodel, finetuning aug2, epochs 40: 
+    acc ??,   feederacc ?? 
+  
+try finetuning with lower learning rate 
+[best one from above] with lr=0.0001:
+    acc ??,   feederacc ?? 
+[best another one from above] with lr=0.0001:
+    acc ??,   feederacc ?? 
+
+
+
+finetuning with wd (baseaug1 lr: 0.001)
+* wd 0.0001, aug1, unfreeze4, epochs30: 
+      acc 98.095 %,   feederacc --
+* wd 0.0001, aug1, unfreeze4, epochs40: 
+      acc 98.095 %,   feederacc ??
+* wd 0.0001, aug2, unfreeze4, epochs40: 
+      acc 98.095 %,   feederacc ??
+* wd 0.00001, lr 0.0001, aug??, 
+
+wd all the way
+* wd
+
+
+im wondering if der ville være en forbedring hvis vi trænede på withoutbackground (tvinger den til at fokusere på fuglens shape? Måske det kunne være et final experiment

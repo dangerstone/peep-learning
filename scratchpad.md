@@ -207,3 +207,8 @@ TODO:
 * Stinna: Træne+gemme basemodel (the real one) 
 * A^K:    Træne basemodel men med SGD-optimiser + lr scheduler
 * Anna:   Træne forskellige augs med basemodel
+
+
+29/11
+
+* jeg tror ikke at finetuning er blevet kørt med aug data

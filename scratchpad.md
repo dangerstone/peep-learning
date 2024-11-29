@@ -211,34 +211,37 @@ TODO:
 
 29/11
 
+
+basemodel w. learning rate 0.0001:
+    acc ??,   feederacc ??
+
+apply the best learning rate to the following experiments!!!
+
 basemodel+aug1, finetuning aug1, epochs 40: 
     acc ??,   feederacc ??
 basemodel+aug2, finetuning aug2, epochs 40: 
     acc ??,   feederacc ?? 
-basemodel, finetuning aug1, epochs 40: 
+basemodel+aug2, finetuning aug3, epochs 40: 
     acc ??,   feederacc ?? 
-basemodel, finetuning aug2, epochs 40: 
+?basemodel, finetuning aug1, epochs 40: 
+    acc ??,   feederacc ?? 
+?basemodel, finetuning aug2, epochs 40: 
     acc ??,   feederacc ?? 
   
-try finetuning with lower learning rate 
-[best one from above] with lr=0.0001:
-    acc ??,   feederacc ?? 
-[best another one from above] with lr=0.0001:
-    acc ??,   feederacc ?? 
+maybe try finetuning with lower learning rate than in first round?
 
 
-
-finetuning with wd (baseaug1 lr: 0.001)
-* wd 0.0001, aug1, unfreeze4, epochs30: 
+finetuning with wd
+* wd 0.0001, aug1, unfreeze4, epochs30 (base lr: 0.001): 
       acc 98.095 %,   feederacc --
-* wd 0.0001, aug1, unfreeze4, epochs40: 
-      acc 98.095 %,   feederacc ??
-* wd 0.0001, aug2, unfreeze4, epochs40: 
-      acc 98.095 %,   feederacc ??
-* wd 0.00001, lr 0.0001, aug??, 
+* wd 0.0001, aug1, unfreeze4, epochs40 (base lr: 0.001): 
+      acc 98.095 %,   feederacc 54.34
+* wd 0.0001/0.00001, aug1, unfreeze4, epochs30: 
+      acc 98.095 %,   feederacc --
+* wd 0.0001/0.00001, aug1, unfreeze4, epochs40: 
+      acc ??,   feederacc ??
+* wd 0.0001/0.00001, aug2, unfreeze4, epochs40: 
+      acc ??,   feederacc ??
 
-wd all the way
-* wd
 
-
-im wondering if der ville være en forbedring hvis vi trænede på withoutbackground (tvinger den til at fokusere på fuglens shape? Måske det kunne være et final experiment
+wd all the way?

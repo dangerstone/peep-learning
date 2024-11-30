@@ -209,39 +209,32 @@ TODO:
 * Anna:   Træne forskellige augs med basemodel
 
 
-29/11
+29/11 - 30/11 stinna:
+
+-- Test accuracies:
+No finetuning: 97.1429
+Finetuning regular: 99.0476
+Finetuning on aug1: 97.1429
+Finetuning on aug2: 85.7143
+Finetuning on aug3: 89.5238
+
+-- Feeder accuracies:
+No finetuning: 30.4463
+Finetuning regular: 58.4256
+Finetuning on aug1: 49.9702
+Finetuning on aug2: 41.7468
+Finetuning on aug3: 50.3283
+
+Finetuning regular/base is done with: 10 epochs, learning rate 0.0005, no weight decay.
+  It is in file fine_base.tar
+  Also saved fine0.0001_e40, which displays that this lr was too low
+
+Tried finetuning on augmented data - all saved in fineonly_aug1.tar etc.
+  Only seems to worsen the model - maybe the learning rate or weight decay can be experimented with here, but maybe it would just help to train the entirety on the augmented data.
+
+Next steps:
+* base training (no finetuning) on augmented data with the updated learning rate of 0.0005
+* try finetuning the above^
+* then whatever makes sense from those experiments
 
 
-basemodel w. learning rate 0.0001:
-    acc ??,   feederacc ??
-
-apply the best learning rate to the following experiments!!!
-
-basemodel+aug1, finetuning aug1, epochs 40: 
-    acc ??,   feederacc ??
-basemodel+aug2, finetuning aug2, epochs 40: 
-    acc ??,   feederacc ?? 
-basemodel+aug2, finetuning aug3, epochs 40: 
-    acc ??,   feederacc ?? 
-?basemodel, finetuning aug1, epochs 40: 
-    acc ??,   feederacc ?? 
-?basemodel, finetuning aug2, epochs 40: 
-    acc ??,   feederacc ?? 
-  
-maybe try finetuning with lower learning rate than in first round?
-
-
-finetuning with wd
-* wd 0.0001, aug1, unfreeze4, epochs30 (base lr: 0.001): 
-      acc 98.095 %,   feederacc --
-* wd 0.0001, aug1, unfreeze4, epochs40 (base lr: 0.001): 
-      acc 98.095 %,   feederacc 54.34
-* wd 0.0001/0.00001, aug1, unfreeze4, epochs30: 
-      acc 98.095 %,   feederacc --
-* wd 0.0001/0.00001, aug1, unfreeze4, epochs40: 
-      acc ??,   feederacc ??
-* wd 0.0001/0.00001, aug2, unfreeze4, epochs40: 
-      acc ??,   feederacc ??
-
-
-wd all the way?

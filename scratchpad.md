@@ -209,7 +209,7 @@ TODO:
 * Anna:   Træne forskellige augs med basemodel
 
 
-29/11 - 30/11 stinna:
+# 29/11 - 30/11 stinna:
 
 -- Test accuracies:
 No finetuning: 97.1429

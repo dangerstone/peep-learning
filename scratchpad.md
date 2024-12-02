@@ -241,12 +241,13 @@ Next steps:
 # 1/12
 
 -- Test accuracies --
- aug1 with lr=0.0005, 50 epochs 93.3% (old 95%)
+ aug1 with lr=0.0005, 50 epochs 94.3% (old 95%)
  aug1 with lr=0.0005, 60 epochs 93.3%
  aug2 with lr=0.0005, 50 epochs 71.4% (old 72%)
  aug3 with lr=0.0005, 50 epochs 71.4% (old 78%)
 
  -- Feeder acc --
   aug1 with lr=0.0005, 60 epochs 33.3%
+  aug1 with lr=0.0005, 50 epochs 31.1%
   aug2 with lr=0.0005, 50 epochs 30.1%
   aug3 with lr=0.0005, 50 epochs 29.5%

@@ -27,4 +27,4 @@ Our train function, datapaths ect. are defined in [setup](setup.ipynb). It is al
 
 The rest of the notebooks are different stages of our experiments during the creating of our final model. Some important ones to note is the notebooks [basemodel](basemodel.ipynb), [finetuning](finetuning.ipynb) and [finetuningaug](finetuningaug.ipynb).
 
-
+We also ran some computations including the feedermodel on colab https://drive.google.com/file/d/1sXFc-AZN-3MOgdh7VCLUIobs0mLkeIJk/view?usp=drive_link 

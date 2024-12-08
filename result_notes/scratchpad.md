@@ -1,4 +1,4 @@
-# Ideas n shit
+# Ideas n so on
 
 **Anne's foreslag til fremgang** 
 1. Train clean images  

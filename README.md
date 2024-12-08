@@ -19,6 +19,12 @@ Related work is listed below, where we have found research using different versi
 * Wang, Y.; Zhou, J.; Zhang, C.; Luo, Z.; Han, X.; Ji, Y.; Guan, J. “Bird Object Detection: Dataset Construction”, Model Performance Evaluation, and Model Lightweighting. Animals 2023, 13, 2924, doi: 10.3390/ani13182924.
 * Niemi, J.; Tanttu, J.T. “Deep Learning Case Study for Automatic Bird Identification”. Appl. Sci. 2018, 8, 2089, doi: 10.3390/app8112089. 
 
+# Git Setup
 
+We defined the data setup in [preprocess](preprocess.ipynb). This was where we split our dataset into, train, test and validation sets. 
+
+Our train function, datapaths ect. are defined in [setup](setup.ipynb). It is also in this notebook together with [extraFunctions](extraFunctions.ipynb) we defined our print functions for accuracy, loss and so on.
+
+The rest of the notebooks are different stages of our experiments during the creating of our final model. Some important ones to note is the notebooks [basemodel](basemodel.ipynb), [finetuning](finetuning.ipynb) and [finetuningaug](finetuningaug.ipynb).
 
 
